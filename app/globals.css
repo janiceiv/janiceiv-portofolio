@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #ffffff;
+  --background: #fafafa;
+  --primary: #1e293b;
+  --secondary: #64748b;
+  --muted: #94a3b8;
+  --medium: #475569;
+  --links: #3b82f6;
+  --blue-background: #eff6ff;
 }
+
+/*
+#3b82f6 — blue untuk links & highlights (blue-500)
+#2563EB — blue untuk section headers (blue-600)
+#eff6ff — blue tint background untuk highlight box (blue-50)
+#fafafa — background (off-white)
+#1e293b — text utama / navbar (slate-900)
+#64748b — text secondary (slate-500)
+#94a3b8 — text muted / labels (slate-400)
+#475569 — text medium (slate-600)
+*/
 
 @theme inline {
+  --color-white: var(--white);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-medium: var(--medium);
+  --color-links: var(--links);
+  --color-blue-background: var(--blue-background);
+  --font-dm-sans: var(--font-dm-sans);
+  --font-jetbrains-mono: var(--font-jetbrains-mono);
+  --font-playfair-display: var(--font-playfair-display);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
 }
