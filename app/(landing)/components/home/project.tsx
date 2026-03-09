@@ -20,7 +20,7 @@ const projectList = [
 
 const Project = () => {
   return(
-    <section id="project" className="container mx-auto">
+    <section id="projects" className="container mx-auto">
       <div className="container mx-auto px-6 lg:px-40 mb-50">
         <div className="flex items-center gap-3 mb-12">
           <span className="text-muted tracking-widest uppercase font-jetbrains-mono">
@@ -63,4 +63,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default Project;

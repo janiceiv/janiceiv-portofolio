@@ -8,7 +8,7 @@ const Header = () =>{
       <ul className="hidden md:flex items-center gap-10 mx-auto text-secondary">
         {nav_items.map((item) => (
           <li key={item} className="hover:text-primary">
-            <Link href={`/${item.toLowerCase()}`}> {item} </Link>
+            <Link href={`#${item.toLowerCase()}`}> {item} </Link>
           </li>
         ))}
       </ul>
