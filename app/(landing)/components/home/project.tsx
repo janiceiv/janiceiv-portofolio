@@ -35,7 +35,7 @@ const Project = () => {
                 <span className="text-primary font-playfair-display text-[20px]">
                   {project.title}
                 </span>
-                <a href={project.link} className={`text-sm ${project.confidential ? "text-muted" : "text-links"}`} target="_blank">
+                <a href={project.link || undefined} className={`text-sm ${project.confidential ? "text-muted" : "text-links"}`} target="_blank">
                   {project.linkLabel}
                 </a>
               </div>
